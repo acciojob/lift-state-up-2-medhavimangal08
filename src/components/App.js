@@ -1,13 +1,16 @@
-
-import React from "react";
-import './../styles/App.css';
+import React, { useState } from "react";
+import Parent from "./Parent";
+import Child from "./Child";
 
 const App = () => {
+  let [text, setText] = useState(null);
+
   return (
     <div>
-        {/* Do not remove the main div */}
+      <Parent text={text}></Parent>
+      <Child setText={setText}></Child>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
