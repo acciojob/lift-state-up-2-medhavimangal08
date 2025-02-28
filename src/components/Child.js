@@ -4,7 +4,7 @@ const Child = ({ setText }) => {
   return (
     <div className="child">
       <h1>Child Component</h1>
-      <input onChange={(e) => setText(e.target.value)}></input>
+      <input type="text" onChange={(e) => setText(e.target.value)}></input>
     </div>
   );
 };
